@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 沉浸式状态栏下，在页面顶部添加一个与状态栏高度相同的View。-->
+    <item name="fake_status_bar_view" type="id"/>
+</resources>
