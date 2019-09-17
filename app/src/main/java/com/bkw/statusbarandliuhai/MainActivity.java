@@ -12,8 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //設置透明狀態欄
-        StatusBarUtils.setTransparent(this);
+        StatusBarUtils.setColor(this, R.color.colorPrimaryDark, true);
+//        StatusBarUtils.setTransparent(this);
 
-//        StatusBarUtils.setColor(this, R.color.colorPrimaryDark, true);
+        StatusBarUtils.setContentViewPading(this);
     }
 }

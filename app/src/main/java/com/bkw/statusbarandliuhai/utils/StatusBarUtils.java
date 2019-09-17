@@ -27,6 +27,15 @@ public class StatusBarUtils {
     private static final int FAKE_STATUS_BAR_VIEW_ID = R.id.fake_status_bar_view;
 
     /**
+     * 获取Activity页面根布局
+     * 给当前内容布局设置与状态栏同样高度的pading。
+     */
+    public static void setContentViewPading(Activity activity) {
+        View childAt = ((ViewGroup) activity.getWindow().findViewById(android.R.id.content)).getChildAt(0);
+        childAt.setPadding(0, getStatusBarHeight(activity.getApplicationContext()), 0, 0);
+    }
+
+    /**
      * 获取状态栏高度
      *
      * @param context
